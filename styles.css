@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+ --primary-color: #285fc4;
+ --secondary-color: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background: #f4f4f4;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#navbar ul {
+    list-style: none;
+}
+
+#navbar ul li{
+    color: #000000;
+    display: inline-block;
+    padding: 1rem;
+    position: relative;
+    
+}
+
+#navbar ul li a{
+    color: #000000;
+    text-decoration: none;
+}
+
+#navbar ul li ul{
+    display: none;
+}
+
+#navbar ul li:hover {
+cursor: pointer;
+ background: #285fc4;
+ color: rgb(255, 255, 255);
+}
+
+#navbar ul li:hover a{
+    color: #fff;
+}
+
+#navbar ul li:hover ul {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 240px;
+    margin-top: 1rem;
+}
+
+#navbar ul li:hover ul li {
+    display: block;
+    background: #e7e7e7;
+}
+#navbar ul li:hover ul a{
+color: #000000;
+}
+
+#navbar ul li:hover{
+background: #e0e0e0;
+color: inherit;
+}
+
+#showcase {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2rem;
+    background: #285fc4;
+}
+
+#showcase h1 {
+    color: #fff;
+    font-size: 4rem;
+}
+
+@media (max-width: 600px) {
+#navbar ul li {
+    display: block;
+
+}
+#navbar ul li:hover ul {
+    width: 100;
+    position: relative;
+    
+}
+}
+
+
+
+
+
+
+
+
+
+
