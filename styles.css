@@ -55,11 +55,18 @@ body {
   .portfolio-items-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+   
   }
+
+  
   
   .portfolio-item-wrapper {
     position: relative;
   }
+  
   
   .portfolio-img-background {
     background-size: cover;
@@ -67,6 +74,7 @@ body {
     background-repeat: no-repeat;
     height: 350px;
     width: 100%;
+    
 
     
   }
@@ -111,7 +119,11 @@ body {
   
   .profile-image-wrapper img {
     
-    width: 100%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    
 
    
 
@@ -120,6 +132,9 @@ body {
   
   .profile-content-wrapper {
     padding: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
     
   }
 
@@ -146,17 +161,18 @@ body {
 
 .profile-image-wrapper-prices {
 
-  text-align: center;
-  display: block;
-  align-items: center;
-  padding-left: 100px;
-  max-height: 20%;
-  max-width: 100%;
-  
+  margin-left: 30%;
+  margin-top: 5%;
+  border-radius: 82px;
 
   
-
+  
+  
 }
+
+
+
+
 
 .class-headline {
   font-family: Cormorant Garamond;
@@ -216,3 +232,10 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0
   
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+
+.profile-image-wrapper-socials {
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
