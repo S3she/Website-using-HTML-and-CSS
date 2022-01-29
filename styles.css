@@ -119,21 +119,16 @@ body {
   .profile-content-wrapper {
     padding: 30px;
   }
+
+  /*fixa denna */
+
+  @media (max-width: 600px) {
+    #navbar ul li {
+        display: block; }
   
   .profile-content-wrapper h1 {
     color: lightseagreen;
     
   }
 
-  
-
-
-
-
-
-
-
-
-
-
-
+}

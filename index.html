@@ -1,35 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"/>
-    <title>CSS Dropdown Menu</title>
+  <meta charset='UTF-8'>
+  <title>Portfolio Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
 </head>
+
 <body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">Home</a>
+        </div>
 
-<nav id="navbar">
-    <ul>
-        <li><a href="#">Hem</a></li>
-        <li><a href="#">Tjänster</a></li>
-        <li>
-            Tjänster
-            <ul>
-                <li><a href="#">Fransförlängning</a></li>
-                <li><a href="#">Lashlift</a></li>
-                <li><a href="#">Ansikts behandlingar</a></li>
-            </ul>
-        </li>
-        <li><a href="#">Priser</a></li>
-        <li><a href="#">Kontakt</a></li>
-    </ul>
+       
+        <div class="nav-link-wrapper active-nav-link">
+            <a href="about.html">About me</a>
+          </div>
+  
+          <div class="nav-link-wrapper active-nav-link">
+              <a href="prices.html">Prices</a>
+            </div>
+  
+            <div class="nav-link-wrapper active-nav-link">
+              <a href="lorem.html">Booking</a>
+            </div>
 
-</nav>
+            <div class="nav-link-wrapper active-nav-link">
+                <a href="mywoork.html">My work</a>
+              </div>
 
-    <header id="showcase">
-<h1> PICKYLASHES</h1>
+              <div class="nav-link-wrapper active-nav-link">
+                <a href="socialmedia.html">Social medias</a>
+              </div>
 
-    </header>
+      </div>
+
+      <div class="right-side">
+        <div class="brand">
+          ISABELLA SHABANI
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/aboutme.jpg)"></div>
+
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              
+            </div>
+
+            <div class="subtitle">Klick here to read more about me</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/Booking.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+        
+            </div>
+
+            <div class="subtitle">Klick here to come to my booking system and check available times</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/prices.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+             
+            </div>
+
+            <div class="subtitle">Klick here to see the pricelist.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/LASHES.png)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              
+            </div>
+
+            <div class="subtitle"> Klick here to see my work</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/socials.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+             
+            </div>
+
+            <div class="subtitle">Klick here to find my social medias</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/coming-soon-2.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              
+            </div>
+
+            <div class="subtitle">Klick here to see the upcoming services</div>
+
+        
+              
+            </div>
+
+            
+
+
+            
+  </div>
+
 </body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
 </html>
