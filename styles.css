@@ -67,6 +67,8 @@ body {
     background-repeat: no-repeat;
     height: 350px;
     width: 100%;
+
+    
   }
   
   .img-text-wrapper {
@@ -118,17 +120,99 @@ body {
   
   .profile-content-wrapper {
     padding: 30px;
+    
   }
 
   /*fixa denna */
 
   @media (max-width: 600px) {
-    #navbar ul li {
+    .nav-wrapper ul li {
         display: block; }
   
-  .profile-content-wrapper h1 {
-    color: lightseagreen;
     
   }
 
+  .profile-content-wrapper-prices {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 100%;
+
+  }
+  
+
+
+
+.profile-image-wrapper-prices {
+
+  text-align: center;
+  display: block;
+  align-items: center;
+  padding-left: 100px;
+  max-height: 20%;
+  max-width: 100%;
+  
+
+  
+
+}
+
+.class-headline {
+  font-family: Cormorant Garamond;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+
+
+color: #000000;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.class-headline-mywork {
+  font-family: Cormorant Garamond;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+
+
+color: #000000;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.class-headline-socials {
+  font-family: Cormorant Garamond;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  
+  
+  color: #000000;
+  
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.class-headline-booking {
+  font-family: Cormorant Garamond;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  
+  
+  color: #000000;
+  
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }

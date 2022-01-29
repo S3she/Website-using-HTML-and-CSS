@@ -45,25 +45,115 @@
         </div>
       </div>
     </div>
+    <h1 class="class-headline-mywork">MY WORK</h1>
 
-    <div class="content-wrapper">
-      <div class="two-column-wrapper">
-        <div class="profile-image-wrapper">
-          <img src="images/isabella2.jpg" alt="">
+    <div class="content-wrapper-mywork">
+      <div class="two-column-wrapper-mywork">
+        <div class="profile-image-wrapper-mywork">
+          <img src="" alt="">
         </div>
+        
 
-        <div class="profile-content-wrapper">
-          <h1>Hi, thanks for visiting my site.</h1>
-          <p>This is my first website that i really enjoyed doing. It was a bit tricky but the result are beautiful. I am a first year
-              Java developer student in Sweden and i am 22 years old.
+        <div class="profile-content-wrapper-mywork">
+          <h1></h1>
+          <p>T
           </p>
 
           <p>3</p>
         </div>
+        <div class="content-wrapper">
+          <div class="portfolio-items-wrapper">
+    
+            <div class="portfolio-item-wrapper">
+              <div class="portfolio-img-background" style="background-image:url(images/lashes1.jpg)"></div>
+    
+              <div class="img-text-wrapper">
+                <div class="logo-wrapper">
+                  
+                </div>
+    
+                <div class="subtitle"></div>
+              </div>
+            </div>
+    
+            <div class="portfolio-item-wrapper">
+              <div class="portfolio-img-background" style="background-image:url(images/lashes2.jpg)"></div>
+              <div class="img-text-wrapper">
+                <div class="logo-wrapper">
+            
+                </div>
+    
+                <div class="subtitle"></div>
+              </div>
+            </div>
+    
+            <div class="portfolio-item-wrapper">
+              <div class="portfolio-img-background" style="background-image:url(images/lashes3.jpg)"></div>
+              <div class="img-text-wrapper">
+                <div class="logo-wrapper">
+                 
+                </div>
+    
+                <div class="subtitle"></div>
+              </div>
+            </div>
+    
+            <div class="portfolio-item-wrapper">
+              <div class="portfolio-img-background" style="background-image:url(images/lashes4.jpg)"></div>
+              <div class="img-text-wrapper">
+                <div class="logo-wrapper">
+                  
+                </div>
+    
+                <div class="subtitle"></div>
+              </div>
+            </div>
+    
+            <div class="portfolio-item-wrapper">
+              <div class="portfolio-img-background" style="background-image:url(images/lashes5.jpg)"></div>
+              <div class="img-text-wrapper">
+                <div class="logo-wrapper">
+                 
+                </div>
+    
+                <div class="subtitle"></div>
+              </div>
+            </div>
+    
+            <div class="portfolio-item-wrapper">
+              <div class="portfolio-img-background" style="background-image:url(images/lashes6.jpg)"></div>
+              <div class="img-text-wrapper">
+                <div class="logo-wrapper">
+                  
+                </div>
+    
+                <div class="subtitle"></div>
+    
+            
+                  
+                </div>
+    
       </div>
     </div>
   </div>
 
 </body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
 
 </html>
