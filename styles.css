@@ -137,10 +137,10 @@ body {
     
   }
 
-  /*fixa denna */
+  
 
-  @media (max-width: 600px) {
-    .nav-wrapper ul li {
+  @media (max-width: 480px) {
+    .nav-link-wrapper ul li {
         display: block; }
   
     
