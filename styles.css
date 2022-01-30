@@ -13,6 +13,8 @@ body {
     justify-content: space-between;
     padding: 38px;
   }
+
+
   
   .left-side {
     display: flex;
@@ -26,7 +28,7 @@ body {
   
   .nav-link-wrapper {
     height: 22px;
-    border-bottom: 1px solid transparent;
+    border-bottom: 1rem solid transparent;
     transition: border-bottom 0.5s;
   }
   
@@ -34,9 +36,6 @@ body {
     border-bottom: 1px solid black;
   }
   
-  .active-nav-link a {
-    color: black !important;
-  }
   
   .nav-link-wrapper a {
     color: #8a8a8a;
@@ -211,6 +210,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0
   font-size: 24px;
   line-height: 29px;
   text-align: center;
+
   
   
   color: #000000;
@@ -236,8 +236,26 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0
 
 .profile-image-wrapper-socials {
   margin-top: 5%;
-  margin-left: 10%;
+  margin-left: 30%;
+
+  background: url(imagesocial55555.png);
+mix-blend-mode: luminosity;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+border-radius: 86px;
+
 }
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: rgb(194, 198, 199);
+  }
+}
+
+
+
+
+
 
 
 
