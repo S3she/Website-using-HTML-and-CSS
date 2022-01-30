@@ -133,7 +133,18 @@ body {
     padding: 30px;
     margin-left: 5%;
     margin-right: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
+    
+
+    
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    
+    color: #000000;
+    
     
   }
 
@@ -207,6 +218,8 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0
   font-size: 24px;
   line-height: 29px;
   text-align: center;
+  left: 5%;
+
 
   
   
@@ -246,11 +259,74 @@ border-radius: 86px;
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 312px) {
   body {
     background-color: rgb(194, 198, 199);
   }
 }
+
+
+.profile-image-wrapper-socials {
+  max-width: 100%;
+  width: 100%;
+  height: auto !important;
+
+}
+
+   h1 {
+    overflow: hidden;
+    text-align: center;
+   }
+   h1:before,
+   h1:after {
+    background-color: #333;
+    content: "";
+    display: inline-block;
+    height: 1px;
+   
+    vertical-align: middle;
+    width: 50%;
+   }
+   h1:before {
+    right: 0.5em;
+    margin-left: -50%;
+   }
+   h1:after {
+    left: 0.5em;
+    margin-right: -50%;
+   }
+
+
+
+@media (max-width:767px) {
+  .portfolio-image-wrapper-socials {
+      max-width: 100%;
+      max-height: 100%;
+  }
+}
+
+@media (min-width:768px) {
+  .portfolio-image-wrapper-socials {
+      max-width: 240px;
+      max-height: 240px;
+  }
+}
+
+@media (min-width:992px) {
+  .portfolio-image-wrapper-socials{
+      max-width: 314px;
+      max-height: 314px;
+  }
+}
+
+@media (min-width:1200px) {
+  .portfolio-image-wrapper-socials {
+      max-width: 380px;
+      max-height: 380px;
+  }
+}
+
+
 
 
 
